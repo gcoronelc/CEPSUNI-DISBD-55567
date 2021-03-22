@@ -1,0 +1,29 @@
+Cines Perú
+==========
+
+Entidades
+---------
+
+documento  // información desnormalizada
+  nro documento: entero
+  Fecha        : Fecha
+
+funcion
+  cod_funcion  : entero CP,
+  sala         : entero, //(de 1 a 10)
+  cod_pelicula : entero CF referencia pelicula(cod_pelicula),
+  fecha y hora : FechaHora,
+  cantidad     : entero   // de personas (**)
+  nro documento: entero CF referncia documento(nro documento)
+
+pelicula
+  cod_pelicula : entero
+  nombre       : texto
+  duracion     : entero //minutos
+
+//adicional
+boleto
+  nro_boleto : entero CP, // (**) contabilizar la cantidad de boletos por funcion
+  cod_funcion: entero CF referencia funcion(cod_funcion),
+  nombres    : texto
+  nro_asiento: entero
