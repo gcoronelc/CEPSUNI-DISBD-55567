@@ -1,0 +1,14 @@
+
+USE VENTAS_55567;
+GO
+
+
+SELECT * FROM CLIENTE;
+GO
+
+
+INSERT INTO CLIENTE VALUES
+(10, 'E. Metalicas'),
+(20, 'M. Soldaduras');
+GO
+
